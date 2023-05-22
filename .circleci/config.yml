@@ -17,6 +17,9 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run:
+          name: "Deploy"
+          command: curl -X GET https://api.render.com/deploy/srv-chlrhcak728q9ichk5v0?key=lW3Nz6Ry7RA
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
